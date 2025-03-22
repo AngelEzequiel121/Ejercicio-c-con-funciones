@@ -16,7 +16,7 @@ return a * b;
 
 float dividir(int a, int b) {
 if (b == 0) {
-cout << "Error: División por cero." << endl;
+cout << "Error: Division por cero." << endl;
 return 0;
 }
 return (float) a / b;
@@ -28,7 +28,7 @@ return pow(base, exponente);
 
 int modulo(int a, int b) {
 if (b == 0) {
-cout << "Error: División por cero." << endl;
+cout << "Error: Division por cero." << endl;
 return 0;
 }
 return a % b;
@@ -36,7 +36,7 @@ return a % b;
 
 double raizCuadrada(int a) {
 if (a < 0) {
-cout << "Error: No se puede calcular la raíz de un número negativo." << endl;
+cout << "Error: No se puede calcular la raiz de un numero negativo." << endl;
 return 0;
 }
 return sqrt(a);
@@ -44,7 +44,7 @@ return sqrt(a);
 
 long long factorial(int a) {
 if (a < 0) {
-cout << "Error: No se puede calcular el factorial de un número negativo." << endl;
+cout << "Error: No se puede calcular el factorial de un numero negativo." << endl;
 return 0;
 }
 long long resultado = 1;
@@ -58,14 +58,14 @@ void mostrarMenu() {
 cout << "\nCalculadora Basica" << endl;
 cout << "1. Suma" << endl;
 cout << "2. Resta" << endl;
-cout << "3. Multiplicación" << endl;
-cout << "4. División" << endl;
+cout << "3. Multiplicacion" << endl;
+cout << "4. Division" << endl;
 cout << "5. Potencia" << endl;
-cout << "6. Módulo" << endl;
-cout << "7. Raíz Cuadrada" << endl;
+cout << "6. Modulo" << endl;
+cout << "7. Raiz Cuadrada" << endl;
 cout << "8. Factorial" << endl;
 cout << "9. Salir" << endl;
-cout << "Seleccione una opción: ";
+cout << "Seleccione una opcion: ";
 }
 
 int main() {
@@ -78,10 +78,10 @@ do {
 
     if (opcion >= 1 && opcion <= 8) {
         if (opcion == 7 || opcion == 8) { 
-            cout << "Ingrese un número: ";
+            cout << "Ingrese un numero: ";
             cin >> a;
         } else {  
-            cout << "Ingrese dos números: ";
+            cout << "Ingrese dos numeros: ";
             cin >> a >> b;
         }
     }
@@ -117,7 +117,7 @@ do {
             cout << "Saliendo de la calculadora..." << endl;
             break;
         default:
-            cout << "Opción no válida, intente nuevamente." << endl;
+            cout << "Opcion no vÃ¡lida, intente nuevamente." << endl;
     }
 } while (opcion != 9);
 
